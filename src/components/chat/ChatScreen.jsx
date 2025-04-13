@@ -85,7 +85,7 @@ export default function ChatScreen() {
     }
 
     try {
-      const res = await fetch("http://192.168.100.127:8000/api/receive/", {
+      const res = await fetch("https://prognos-deploy.onrender.com/api/receive/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: userMessage, question: lastQuestionContext })
